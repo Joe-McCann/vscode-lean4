@@ -8,6 +8,17 @@
     "watchTest": "lerna run --parallel --stream watchTest",
     "lint": "eslint -c .eslintrc.js \"{lean4-infoview-api,lean4-infoview,vscode-lean4}/src/**/*.{ts,tsx}\" \"vscode-lean4/test/suite/**/*.{ts,tsx}\""
   },
+  "contributes": {
+    "languages": [
+      {
+        "id": "lean4",
+        "icon": {
+          "light": "./icons/latex-light.png",
+          "dark": "./icons/latex-dark.png"
+        }
+      }
+    ]
+  },
   "workspaces": [
     "lean4-infoview-api",
     "lean4-infoview",
@@ -18,7 +29,7 @@
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "typescript": "^4.9.5",
-    "lerna": "^8.1.2"
+    "lerna": "^8.1.2",
+    "typescript": "^4.9.5"
   }
 }
